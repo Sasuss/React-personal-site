@@ -1,33 +1,23 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import PersonalPicture from "./assets/klimes.jpg"
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    <h1>Alexander Klimeš</h1>
-      <section id="center">
-        <div className="hero">
-          <img src={PersonalPicture} className="base" width="" height="" alt="" />
+      <div className='flex flex-row'>
+        <img src={PersonalPicture} className="rounded-4xl w-70 basis-1/5" alt="" />
+        <div className='basis-4/5 ml-5'>
+          <h1 className='font-[Raleway]'>Alexander Klimeš</h1>
+          <span className='text-purple-500 font-raleway'>LFL Founder</span>
+
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      </div>
+
+
+
 
       <div className="ticks"></div>
 
