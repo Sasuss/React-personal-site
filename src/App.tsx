@@ -1,6 +1,10 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import PersonalPicture from "./assets/klimes.jpg"
+import GithubLogo from "./assets/github.png"
+import LinkedinLogo from "./assets/linkedin.png"
+import DiscordLogo from "./assets/discord.png"
+import InstagramLogo from "./assets/instagram.png"
 import './App.css'
 
 function App() {
@@ -8,13 +12,32 @@ function App() {
   return (
     <>
       <div className='flex flex-row'>
-        <img src={PersonalPicture} className="rounded-4xl w-70 basis-1/5" alt="" />
+        <img src={PersonalPicture} className="rounded-4xl w-70 basis-1/5" alt="Personal Picture" />
         <div className='basis-4/5 ml-5'>
           <h1 className='font-[Raleway]'>Alexander Klimeš</h1>
           <span className='text-purple-500 font-raleway'>LFL Founder</span>
 
         </div>
       </div>
+      <div className='flex flex-row space-x-50 mt-5 mb-5 pl-25 pr-25'>
+        <button className='bg-white rounded-xl basis-1/4 shadow-lg shadow-gray-200 transition duration-300 hover:-translate-y-3 hover:w-150%'>
+          <img src={GithubLogo} alt='Github' className='p-2'></img>
+
+        </button>
+        <button className='bg-white rounded-xl basis-1/4 shadow-lg shadow-gray-200 transition duration-300 hover:-translate-y-3 hover:w-150%'>
+          <img src={LinkedinLogo} alt='Github' className='p-2'></img>
+
+        </button>
+        <button className='bg-white rounded-xl basis-1/4 shadow-lg shadow-gray-200 transition duration-300 hover:-translate-y-3 hover:w-150%'>
+          <img src={DiscordLogo} alt='Github' className='p-2'></img>
+
+        </button>
+        <button className='bg-white rounded-xl basis-1/4 shadow-lg shadow-gray-200 transition duration-300 hover:-translate-y-3 hover:w-150%'>
+          <img src={InstagramLogo} alt='Github' className='p-2'></img>
+
+        </button>
+      </div>
+
 
 
 
